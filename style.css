@@ -68,4 +68,13 @@ body {
     border-radius: 8px;
   }
   
+  #insignia {
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #insignia:hover {
+    transform: scale(1.1);
+  }
   

@@ -10,7 +10,10 @@
 <body class="p-4">
   <div class="container">
     <h1 class="mb-4">📊 Dashboard de Estatísticas</h1>
-
+    <div class="text-center mt-4">
+      <button class="btn btn-danger" onclick="resetarDados()">🔄 Resetar Dados</button>
+    </div>
+    
     <div class="row g-4">
       <div class="col-md-3">
         <div class="card text-bg-primary text-center">
@@ -51,6 +54,12 @@
 
     <hr class="my-4" />
 
+    <h4>Insígnias do Piloto</h4>
+    <div id="insignia" class="d-flex flex-wrap justify-content-center gap-3 my-3"></div>
+    
+
+    <hr class="my-4" />
+
     <h4>Gráficos</h4>
     <div class="row">
       <div class="col-md-6 mb-4">
@@ -61,12 +70,23 @@
       </div>
     </div>
   </div>
-    <div class="text-center my-3">
-      <h4>Total de Horas Voadas: <span id="totalHoras">0h 00min</span></h4>
-    </div>
+  <div class="text-center my-3">
+    <h4>Total de Horas Voadas: <span id="totalHoras">0h 00min</span></h4>
   </div>
 
   <script src="script2.js"></script>
   <script src="cronometro.js"></script>
+  <script>
+    // Exibir a insígnia no dashboard
+    document.addEventListener('DOMContentLoaded', () => {
+      const insignia = localStorage.getItem('insignia');
+      const insigniaImg = document.getElementById('insignia');
+
+      if (insignia) {
+        // Se insígnia foi encontrada, exiba a imagem correspondente
+        insigniaImg.src = `${insignia}.png`;  // Nome da imagem deve ser "bronze.png", "prata.png", ou "ouro.png"
+      }
+    });
+  </script>
 </body>
 </html>

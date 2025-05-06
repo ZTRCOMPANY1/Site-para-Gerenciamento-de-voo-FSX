@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Piloto</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="perfil-container">
+        <h2>Bem-vindo, <span id="nomePiloto"></span></h2>
+        <p>Pontos: <span id="pontosPiloto">0</span></p>
+
+        <!-- Seção de Cronômetro -->
+        <div class="cronometro">
+            <h3>Cronômetro de Voo</h3>
+            <p>Tempo de voo: <span id="tempoVoo">00:00:00</span></p>
+            <button onclick="iniciarCronometro()">Iniciar Voo</button>
+            <button onclick="pararCronometro()">Parar Voo</button>
+        </div>
+
+        <!-- Seção de Insígnias -->
+        <div id="insigniaContainer">
+            <h3>Insígnias</h3>
+            <div id="insignia"></div> <!-- Insígnias serão exibidas aqui -->
+        </div>
+
+        <p><a href="login.html">Sair</a></p>
+    </div>
+    <script src="perfil.js"></script>
+</body>
+</html>
