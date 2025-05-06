@@ -1,0 +1,71 @@
+body {
+    background-color: #f4f4f4;
+  }
+  .container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .badge {
+    font-size: 14px;
+  }
+  
+  .badge-planejado {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .badge-emvoo {
+    background-color: orange;
+    color: #fff;
+  }
+  .badge-pousado {
+    background-color: green;
+    color: #fff;
+  }
+  .badge-cancelado {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .card-aeronave img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  
+  
+  button.verRota {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #mapa {
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  
